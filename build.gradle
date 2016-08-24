@@ -15,6 +15,7 @@ apply plugin: 'war'
 apply plugin: 'spring-boot'
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -22,13 +23,12 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("mysql:mysql-connector-java:5.1.6")
+
     compileOnly("org.projectlombok:lombok:1.16.10")
+
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
-//    compile("org.thymeleaf:thymeleaf-spring4")
-//    compile("nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect")
-//    compile("com.fasterxml.jackson.core:jackson-core:2.8.1")
-//    compile("com.fasterxml.jackson.core:jackson-databind:2.8.1")
-//    compile("com.fasterxml.jackson.core:jackson-annotations:2.8.1")
 
 }
 

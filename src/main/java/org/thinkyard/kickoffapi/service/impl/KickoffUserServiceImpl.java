@@ -1,7 +1,6 @@
 package org.thinkyard.kickoffapi.service.impl;
 
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.thinkyard.kickoffapi.entity.KickoffUserEntity;
 import org.thinkyard.kickoffapi.repository.KickoffUserRepository;
@@ -11,8 +10,7 @@ import org.thinkyard.kickoffapi.service.KickoffUserService;
  * Created by harshad on 23/08/16.
  */
 
-@Component
-@Qualifier("kickoffUserServiceImpl")
+@Service(value = "kickoffUserServiceImpl")
 @Transactional
 public class KickoffUserServiceImpl implements KickoffUserService {
 

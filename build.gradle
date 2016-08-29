@@ -22,14 +22,20 @@ repositories {
 }
 
 dependencies {
+
+    //spring boot
     compile("org.springframework.boot:spring-boot-starter-web")
+
+    //spring boot data-jpa
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    //mysql connector
     compile("mysql:mysql-connector-java:5.1.6")
 
+    //lombok
     compileOnly("org.projectlombok:lombok:1.16.10")
 
     providedRuntime("org.springframework.boot:spring-boot-starter-tomcat")
-
 }
 
 war {

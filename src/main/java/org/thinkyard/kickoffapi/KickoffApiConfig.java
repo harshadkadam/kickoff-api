@@ -16,10 +16,6 @@ import javax.sql.DataSource;
  * Created by harshad on 22/08/16.
  */
 
-//@ComponentScan(basePackages = { "org.thinkyard.kickoffapi.config", "org.thinkyard.kickoffapi.controller",
-//		"org.thinkyard.kickoffapi.service", "org.thinkyard.kickoffapi.service.impl",
-//		"org.thinkyard.kickoffapi.repository", "org.thinkyard.kickoffapi.entity", "org.thinkyard.kickoffapi.wrapper" })
-//@PropertySource("classpath:application.properties")
 @SpringBootApplication
 @ComponentScan("org.thinkyard.kickoffapi")
 public class KickoffApiConfig extends SpringBootServletInitializer {
